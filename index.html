@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌦 Weather Forecast App</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="card shadow-lg p-4 text-center rounded-4">
+      
+      <!-- Header with globe icon and gradient text -->
+      <div class="mb-4">
+        <h2 class="fw-bold text-center gradient-text d-flex justify-content-center align-items-center gap-2">
+          <img src="https://img.icons8.com/color/48/000000/globe--v1.png" width="32" height="32" />
+          Weather Forecast App
+        </h2>
+      </div>
+
+      <!-- Input Form -->
+      <div class="row g-2 justify-content-center mb-3">
+        <div class="col-md-4">
+          <input type="text" id="cityInput" class="form-control form-control-lg" placeholder="Enter city or village" />
+        </div>
+        <div class="col-md-3">
+          <select id="countryInput" class="form-select form-select-lg">
+            <option value="">Select Country (Optional)</option>
+            <option value="IN">India</option>
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="FR">France</option>
+            <option value="JP">Japan</option>
+            <option value="DE">Germany</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+            <option value="BR">Brazil</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary btn-lg w-100" onclick="getWeather()">Search</button>
+        </div>
+      </div>
+
+      <!-- Display Areas -->
+      <div id="weatherInfo" class="my-4"></div>
+      <div id="forecast" class="row g-3 justify-content-center"></div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

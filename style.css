@@ -1,0 +1,31 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.card {
+  background-color: #ffffffee;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.forecast-card {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 15px;
+  text-align: center;
+}
